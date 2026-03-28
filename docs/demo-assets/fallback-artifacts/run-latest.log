@@ -1,0 +1,1393 @@
+[2026-03-28T20:46:08.789052Z] Starting factory shock demo run
+[2026-03-28T20:46:08.789095Z] RUN health.check: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:08.802725Z] RUN ontology.generate: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/graph/ontology/generate -F files=@/Users/kenjipcx/hackathons/Wisemen/docs/demo-assets/battery-factory-scenario.md -F files=@/Users/kenjipcx/hackathons/Wisemen/docs/demo-assets/battery-kg-quick-seed.md -F simulation_requirement=Simulate an operational cascade for the factory scenario in this document.
+
+Shock event:
+China restricts lithium precursor exports for 30 days. Lead times for lithium precursor immediately double, spot prices jump 35%, and suppliers cannot guarantee committed volumes for the next two weeks.
+
+Model the reactions of procurement, plant operations, logistics, suppliers, customers, and regulators as a causal operational system, not a public-opinion simulation.
+
+Track and reason about:
+
+- inventory burn
+- lead-time expansion
+- production throughput risk
+- downtime / line-down risk
+- cost pressure
+- customer delivery risk
+
+The output should emphasize:
+
+1. the primary failure chain
+2. the estimated disruption window
+3. the most constrained node in the system
+4. the best mitigation actions to buy time
+5. concise, grounded reasoning from the simulated stakeholders
+ -F project_name=Factory Shock Demo Run -F
+[2026-03-28T20:46:11.758711Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:11.801069Z] Prepare status=processing progress=67
+[2026-03-28T20:46:14.811206Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:14.842719Z] Prepare status=processing progress=67
+[2026-03-28T20:46:17.850566Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:17.887302Z] Prepare status=processing progress=67
+[2026-03-28T20:46:20.893891Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:20.903908Z] Prepare status=processing progress=67
+[2026-03-28T20:46:23.905432Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:23.942262Z] Prepare status=processing progress=67
+[2026-03-28T20:46:26.951821Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:26.966625Z] Prepare status=processing progress=67
+[2026-03-28T20:46:29.967919Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:30.014490Z] Prepare status=processing progress=67
+[2026-03-28T20:46:30.566890Z] Created project proj_f5ba8a167480
+[2026-03-28T20:46:30.566968Z] RUN graph.build: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/graph/build -H Content-Type: application/json -d
+[2026-03-28T20:46:30.739372Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:30.775180Z] Graph task status=processing progress=15
+[2026-03-28T20:46:32.783821Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:32.798944Z] Graph task status=processing progress=19
+[2026-03-28T20:46:33.015911Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:33.027014Z] Prepare status=processing progress=67
+[2026-03-28T20:46:34.799889Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:34.810934Z] Graph task status=processing progress=19
+[2026-03-28T20:46:36.029912Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:36.041580Z] Prepare status=processing progress=67
+[2026-03-28T20:46:36.816754Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:36.845345Z] Graph task status=processing progress=19
+[2026-03-28T20:46:38.853150Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:38.877918Z] Graph task status=processing progress=23
+[2026-03-28T20:46:39.041995Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:39.053874Z] Prepare status=processing progress=67
+[2026-03-28T20:46:40.879778Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:40.891290Z] Graph task status=processing progress=23
+[2026-03-28T20:46:42.057119Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:42.068729Z] Prepare status=processing progress=67
+[2026-03-28T20:46:42.892331Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:42.914328Z] Graph task status=processing progress=23
+[2026-03-28T20:46:44.919808Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:44.945330Z] Graph task status=processing progress=23
+[2026-03-28T20:46:45.069052Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:45.081257Z] Prepare status=processing progress=67
+[2026-03-28T20:46:46.955439Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:46.986958Z] Graph task status=processing progress=23
+[2026-03-28T20:46:48.082177Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:48.101634Z] Prepare status=processing progress=67
+[2026-03-28T20:46:48.989113Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:49.015881Z] Graph task status=processing progress=23
+[2026-03-28T20:46:51.021804Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:51.032476Z] Graph task status=processing progress=23
+[2026-03-28T20:46:51.108759Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:51.119569Z] Prepare status=processing progress=67
+[2026-03-28T20:46:53.034456Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:53.092694Z] Graph task status=processing progress=23
+[2026-03-28T20:46:54.119917Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:54.138591Z] Prepare status=processing progress=67
+[2026-03-28T20:46:55.102885Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:55.133143Z] Graph task status=processing progress=23
+[2026-03-28T20:46:57.141177Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:46:57.143378Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:57.193467Z] Graph task status=processing progress=23
+[2026-03-28T20:46:57.194337Z] Prepare status=processing progress=67
+[2026-03-28T20:46:59.199298Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:46:59.218237Z] Graph task status=processing progress=23
+[2026-03-28T20:47:00.200484Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:00.220273Z] Prepare status=processing progress=67
+[2026-03-28T20:47:01.218488Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:01.239543Z] Graph task status=processing progress=23
+[2026-03-28T20:47:03.230605Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:03.245112Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:03.256294Z] Prepare status=processing progress=67
+[2026-03-28T20:47:03.261695Z] Graph task status=processing progress=23
+[2026-03-28T20:47:05.263759Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:05.309901Z] Graph task status=processing progress=23
+[2026-03-28T20:47:06.258510Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:06.281344Z] Prepare status=processing progress=67
+[2026-03-28T20:47:07.310091Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:07.320771Z] Graph task status=processing progress=23
+[2026-03-28T20:47:09.282426Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:09.322523Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:09.335232Z] Prepare status=processing progress=67
+[2026-03-28T20:47:09.364612Z] Graph task status=processing progress=23
+[2026-03-28T20:47:11.365061Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:11.382881Z] Graph task status=processing progress=31
+[2026-03-28T20:47:12.335738Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:12.360113Z] Prepare status=processing progress=67
+[2026-03-28T20:47:13.393043Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:13.404435Z] Graph task status=processing progress=31
+[2026-03-28T20:47:15.370295Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:15.405068Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:15.437232Z] Graph task status=processing progress=31
+[2026-03-28T20:47:15.437830Z] Prepare status=processing progress=67
+[2026-03-28T20:47:17.446576Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:17.485185Z] Graph task status=processing progress=31
+[2026-03-28T20:47:18.448083Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:18.467394Z] Prepare status=processing progress=67
+[2026-03-28T20:47:19.487773Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:19.526476Z] Graph task status=processing progress=31
+[2026-03-28T20:47:21.469262Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:21.496436Z] Prepare status=processing progress=67
+[2026-03-28T20:47:21.533521Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:21.558450Z] Graph task status=processing progress=31
+[2026-03-28T20:47:23.559724Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:23.620366Z] Graph task status=processing progress=31
+[2026-03-28T20:47:24.506584Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:24.517652Z] Prepare status=processing progress=67
+[2026-03-28T20:47:25.621844Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:25.831864Z] Graph task status=processing progress=31
+[2026-03-28T20:47:27.519748Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:27.553637Z] Prepare status=processing progress=67
+[2026-03-28T20:47:27.837084Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:27.870982Z] Graph task status=processing progress=31
+[2026-03-28T20:47:29.878524Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:29.910954Z] Graph task status=processing progress=31
+[2026-03-28T20:47:30.554390Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:30.636796Z] Prepare status=processing progress=67
+[2026-03-28T20:47:31.914381Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:31.923414Z] Graph task status=processing progress=31
+[2026-03-28T20:47:33.637039Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:33.841354Z] Prepare status=processing progress=67
+[2026-03-28T20:47:33.925809Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:33.950394Z] Graph task status=processing progress=31
+[2026-03-28T20:47:35.951793Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:35.983311Z] Graph task status=processing progress=35
+[2026-03-28T20:47:36.851498Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:36.901936Z] Prepare status=processing progress=76
+[2026-03-28T20:47:37.984342Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:38.002239Z] Graph task status=processing progress=35
+[2026-03-28T20:47:39.903724Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:39.923692Z] Prepare status=processing progress=76
+[2026-03-28T20:47:40.002410Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:40.011258Z] Graph task status=processing progress=35
+[2026-03-28T20:47:42.016772Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:42.038390Z] Graph task status=processing progress=35
+[2026-03-28T20:47:42.925111Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:42.961895Z] Prepare status=processing progress=76
+[2026-03-28T20:47:44.041784Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:44.074826Z] Graph task status=processing progress=35
+[2026-03-28T20:47:45.967324Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:45.993858Z] Prepare status=processing progress=76
+[2026-03-28T20:47:46.077752Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:46.110252Z] Graph task status=processing progress=35
+[2026-03-28T20:47:48.116607Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:48.127732Z] Graph task status=processing progress=35
+[2026-03-28T20:47:48.995694Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:49.041006Z] Prepare status=processing progress=76
+[2026-03-28T20:47:50.133267Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:50.145118Z] Graph task status=processing progress=35
+[2026-03-28T20:47:52.042442Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:52.072565Z] Prepare status=processing progress=76
+[2026-03-28T20:47:52.155362Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:52.193523Z] Graph task status=processing progress=35
+[2026-03-28T20:47:54.194348Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:54.207620Z] Graph task status=processing progress=35
+[2026-03-28T20:47:55.074364Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:55.107149Z] Prepare status=processing progress=76
+[2026-03-28T20:47:56.211161Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:56.237162Z] Graph task status=processing progress=35
+[2026-03-28T20:47:58.109033Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:47:58.137337Z] Prepare status=processing progress=76
+[2026-03-28T20:47:58.241695Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:47:58.251833Z] Graph task status=processing progress=35
+[2026-03-28T20:48:00.253040Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:00.272203Z] Graph task status=processing progress=35
+[2026-03-28T20:48:01.138779Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:01.194894Z] Prepare status=processing progress=76
+[2026-03-28T20:48:02.274321Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:02.300992Z] Graph task status=processing progress=35
+[2026-03-28T20:48:04.199518Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:04.217100Z] Prepare status=processing progress=76
+[2026-03-28T20:48:04.311132Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:04.320631Z] Graph task status=processing progress=35
+[2026-03-28T20:48:06.330792Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:06.349357Z] Graph task status=processing progress=35
+[2026-03-28T20:48:07.220576Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:07.251779Z] Prepare status=processing progress=76
+[2026-03-28T20:48:08.359547Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:08.379156Z] Graph task status=processing progress=35
+[2026-03-28T20:48:10.253098Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:10.266664Z] Prepare status=processing progress=76
+[2026-03-28T20:48:10.389372Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:10.408452Z] Graph task status=processing progress=35
+[2026-03-28T20:48:12.412995Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:12.444746Z] Graph task status=processing progress=35
+[2026-03-28T20:48:13.276867Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:13.336444Z] Prepare status=processing progress=76
+[2026-03-28T20:48:14.445009Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:14.460828Z] Graph task status=processing progress=35
+[2026-03-28T20:48:16.339836Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:16.350039Z] Prepare status=processing progress=76
+[2026-03-28T20:48:16.461027Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:16.477345Z] Graph task status=processing progress=35
+[2026-03-28T20:48:18.479681Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:18.497172Z] Graph task status=processing progress=35
+[2026-03-28T20:48:19.360306Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:19.379572Z] Prepare status=processing progress=76
+[2026-03-28T20:48:20.498359Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:20.515887Z] Graph task status=processing progress=35
+[2026-03-28T20:48:22.384395Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:22.405598Z] Prepare status=processing progress=76
+[2026-03-28T20:48:22.526102Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:22.543190Z] Graph task status=processing progress=35
+[2026-03-28T20:48:24.543674Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:24.560350Z] Graph task status=processing progress=35
+[2026-03-28T20:48:25.415746Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:25.429334Z] Prepare status=processing progress=76
+[2026-03-28T20:48:26.562327Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:26.572672Z] Graph task status=processing progress=35
+[2026-03-28T20:48:28.439493Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:28.450967Z] Prepare status=processing progress=76
+[2026-03-28T20:48:28.582889Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:28.601360Z] Graph task status=processing progress=35
+[2026-03-28T20:48:30.602933Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:30.615856Z] Graph task status=processing progress=35
+[2026-03-28T20:48:31.461213Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:31.477792Z] Prepare status=processing progress=76
+[2026-03-28T20:48:32.625816Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:32.636213Z] Graph task status=processing progress=35
+[2026-03-28T20:48:34.481753Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:34.495354Z] Prepare status=processing progress=76
+[2026-03-28T20:48:34.642389Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:34.652277Z] Graph task status=processing progress=35
+[2026-03-28T20:48:36.658280Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:36.755344Z] Graph task status=processing progress=35
+[2026-03-28T20:48:37.505648Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:37.565536Z] Prepare status=processing progress=76
+[2026-03-28T20:48:38.756950Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:39.013366Z] Graph task status=processing progress=35
+[2026-03-28T20:48:40.575780Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:40.596543Z] Prepare status=processing progress=76
+[2026-03-28T20:48:41.023521Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:41.057647Z] Graph task status=processing progress=35
+[2026-03-28T20:48:43.067742Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:43.118516Z] Graph task status=processing progress=35
+[2026-03-28T20:48:43.597026Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:43.644993Z] Prepare status=processing progress=76
+[2026-03-28T20:48:45.128616Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:45.166990Z] Graph task status=processing progress=35
+[2026-03-28T20:48:46.647606Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:46.659743Z] Prepare status=processing progress=76
+[2026-03-28T20:48:47.172337Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:47.215129Z] Graph task status=processing progress=35
+[2026-03-28T20:48:49.222268Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:49.268550Z] Graph task status=processing progress=35
+[2026-03-28T20:48:49.665190Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:49.686580Z] Prepare status=processing progress=76
+[2026-03-28T20:48:51.277934Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:51.295659Z] Graph task status=processing progress=35
+[2026-03-28T20:48:52.687735Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:52.697749Z] Prepare status=processing progress=76
+[2026-03-28T20:48:53.303751Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:53.315307Z] Graph task status=processing progress=35
+[2026-03-28T20:48:55.325444Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:55.337166Z] Graph task status=processing progress=35
+[2026-03-28T20:48:55.701024Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:55.730753Z] Prepare status=processing progress=76
+[2026-03-28T20:48:57.347326Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:57.359617Z] Graph task status=processing progress=35
+[2026-03-28T20:48:58.731073Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:48:58.893698Z] Prepare status=processing progress=76
+[2026-03-28T20:48:59.363922Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:48:59.376873Z] Graph task status=processing progress=35
+[2026-03-28T20:49:01.378395Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:01.392534Z] Graph task status=processing progress=35
+[2026-03-28T20:49:01.895597Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:02.004336Z] Prepare status=processing progress=76
+[2026-03-28T20:49:03.398808Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:03.410212Z] Graph task status=processing progress=35
+[2026-03-28T20:49:05.012939Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:05.320021Z] Prepare status=processing progress=76
+[2026-03-28T20:49:05.417367Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:05.470164Z] Graph task status=processing progress=35
+[2026-03-28T20:49:07.474220Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:07.506087Z] Graph task status=processing progress=35
+[2026-03-28T20:49:08.326416Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:08.354064Z] Prepare status=processing progress=76
+[2026-03-28T20:49:09.508027Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:09.591086Z] Graph task status=processing progress=35
+[2026-03-28T20:49:11.364319Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:11.386149Z] Prepare status=processing progress=76
+[2026-03-28T20:49:11.601242Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:11.611347Z] Graph task status=processing progress=35
+[2026-03-28T20:49:13.615591Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:13.630303Z] Graph task status=processing progress=35
+[2026-03-28T20:49:14.396539Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:14.465423Z] Prepare status=processing progress=76
+[2026-03-28T20:49:15.631602Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:15.655600Z] Graph task status=processing progress=35
+[2026-03-28T20:49:17.466330Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:17.487193Z] Prepare status=processing progress=76
+[2026-03-28T20:49:17.665804Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:17.698243Z] Graph task status=processing progress=35
+[2026-03-28T20:49:19.698682Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:19.720442Z] Graph task status=processing progress=35
+[2026-03-28T20:49:20.495567Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:20.529043Z] Prepare status=processing progress=76
+[2026-03-28T20:49:21.724867Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:21.755692Z] Graph task status=processing progress=35
+[2026-03-28T20:49:23.539280Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:23.559820Z] Prepare status=processing progress=76
+[2026-03-28T20:49:23.757002Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:23.778898Z] Graph task status=processing progress=35
+[2026-03-28T20:49:25.782462Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:25.999921Z] Graph task status=processing progress=35
+[2026-03-28T20:49:26.565701Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:26.576808Z] Prepare status=processing progress=76
+[2026-03-28T20:49:28.010071Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:28.044609Z] Graph task status=processing progress=35
+[2026-03-28T20:49:29.587102Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:29.612267Z] Prepare status=processing progress=76
+[2026-03-28T20:49:30.054743Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:30.075653Z] Graph task status=processing progress=35
+[2026-03-28T20:49:32.081233Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:32.090427Z] Graph task status=processing progress=35
+[2026-03-28T20:49:32.615638Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:32.634481Z] Prepare status=processing progress=76
+[2026-03-28T20:49:34.100558Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:34.120448Z] Graph task status=processing progress=35
+[2026-03-28T20:49:35.644698Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:35.697509Z] Prepare status=processing progress=76
+[2026-03-28T20:49:36.122920Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:36.144270Z] Graph task status=processing progress=35
+[2026-03-28T20:49:38.154365Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:38.182761Z] Graph task status=processing progress=35
+[2026-03-28T20:49:38.698278Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:38.718997Z] Prepare status=processing progress=76
+[2026-03-28T20:49:40.186235Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:40.209846Z] Graph task status=processing progress=35
+[2026-03-28T20:49:41.721873Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:41.738562Z] Prepare status=processing progress=76
+[2026-03-28T20:49:42.210176Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:42.233685Z] Graph task status=processing progress=35
+[2026-03-28T20:49:44.234181Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:44.262801Z] Graph task status=processing progress=35
+[2026-03-28T20:49:44.745515Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:44.768352Z] Prepare status=processing progress=76
+[2026-03-28T20:49:46.266189Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:46.291341Z] Graph task status=processing progress=35
+[2026-03-28T20:49:47.778482Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:47.806617Z] Prepare status=processing progress=76
+[2026-03-28T20:49:48.301460Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:48.324826Z] Graph task status=processing progress=35
+[2026-03-28T20:49:50.334989Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:50.346915Z] Graph task status=processing progress=35
+[2026-03-28T20:49:50.807524Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:50.975083Z] Prepare status=processing progress=76
+[2026-03-28T20:49:52.357057Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:52.368124Z] Graph task status=processing progress=35
+[2026-03-28T20:49:53.975751Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:54.110661Z] Prepare status=processing progress=76
+[2026-03-28T20:49:54.378267Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:54.390516Z] Graph task status=processing progress=35
+[2026-03-28T20:49:56.391545Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:56.404494Z] Graph task status=processing progress=35
+[2026-03-28T20:49:57.111510Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:49:57.151300Z] Prepare status=processing progress=76
+[2026-03-28T20:49:58.408249Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:49:58.431226Z] Graph task status=processing progress=35
+[2026-03-28T20:50:00.157197Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:00.216945Z] Prepare status=processing progress=76
+[2026-03-28T20:50:00.431532Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:00.444148Z] Graph task status=processing progress=35
+[2026-03-28T20:50:02.444813Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:02.468387Z] Graph task status=processing progress=35
+[2026-03-28T20:50:03.226123Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:03.268138Z] Prepare status=processing progress=76
+[2026-03-28T20:50:04.473125Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:04.494196Z] Graph task status=processing progress=35
+[2026-03-28T20:50:06.268831Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:06.312618Z] Prepare status=processing progress=76
+[2026-03-28T20:50:06.500685Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:06.514788Z] Graph task status=processing progress=35
+[2026-03-28T20:50:08.516914Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:08.533916Z] Graph task status=processing progress=35
+[2026-03-28T20:50:09.317494Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:09.330588Z] Prepare status=processing progress=76
+[2026-03-28T20:50:10.543545Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:10.556325Z] Graph task status=processing progress=35
+[2026-03-28T20:50:12.334272Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:12.387772Z] Prepare status=processing progress=76
+[2026-03-28T20:50:12.556907Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:12.576064Z] Graph task status=processing progress=35
+[2026-03-28T20:50:14.586292Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:14.606655Z] Graph task status=processing progress=35
+[2026-03-28T20:50:15.394902Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:15.475912Z] Prepare status=processing progress=76
+[2026-03-28T20:50:16.607454Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:16.618512Z] Graph task status=processing progress=35
+[2026-03-28T20:50:18.481847Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:18.496831Z] Prepare status=processing progress=76
+[2026-03-28T20:50:18.628642Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:18.646850Z] Graph task status=processing progress=35
+[2026-03-28T20:50:20.647494Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:20.672359Z] Graph task status=processing progress=35
+[2026-03-28T20:50:21.500888Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:21.519479Z] Prepare status=processing progress=76
+[2026-03-28T20:50:22.674167Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:22.685725Z] Graph task status=processing progress=35
+[2026-03-28T20:50:24.529659Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:24.549711Z] Prepare status=processing progress=76
+[2026-03-28T20:50:24.696010Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:24.712585Z] Graph task status=processing progress=35
+[2026-03-28T20:50:26.714158Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:26.724930Z] Graph task status=processing progress=35
+[2026-03-28T20:50:27.555088Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:27.572536Z] Prepare status=processing progress=76
+[2026-03-28T20:50:28.735214Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:28.753189Z] Graph task status=processing progress=35
+[2026-03-28T20:50:30.581990Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:30.608435Z] Prepare status=processing progress=76
+[2026-03-28T20:50:30.754160Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:30.769311Z] Graph task status=processing progress=35
+[2026-03-28T20:50:32.774409Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:32.795794Z] Graph task status=processing progress=35
+[2026-03-28T20:50:33.610283Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:33.631843Z] Prepare status=processing progress=76
+[2026-03-28T20:50:34.796861Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:34.815794Z] Graph task status=processing progress=35
+[2026-03-28T20:50:36.637576Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:36.650315Z] Prepare status=processing progress=76
+[2026-03-28T20:50:36.819618Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:36.833848Z] Graph task status=processing progress=35
+[2026-03-28T20:50:38.842669Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:38.857974Z] Graph task status=processing progress=35
+[2026-03-28T20:50:39.660588Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:39.679453Z] Prepare status=processing progress=76
+[2026-03-28T20:50:40.864221Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:40.874973Z] Graph task status=processing progress=35
+[2026-03-28T20:50:42.682130Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:42.694222Z] Prepare status=processing progress=76
+[2026-03-28T20:50:42.884741Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:42.896984Z] Graph task status=processing progress=35
+[2026-03-28T20:50:44.897227Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:44.917945Z] Graph task status=processing progress=35
+[2026-03-28T20:50:45.704474Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:45.725594Z] Prepare status=processing progress=76
+[2026-03-28T20:50:46.919312Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:47.087387Z] Graph task status=processing progress=35
+[2026-03-28T20:50:48.728662Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:48.741371Z] Prepare status=processing progress=76
+[2026-03-28T20:50:49.090097Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:49.243050Z] Graph task status=processing progress=35
+[2026-03-28T20:50:51.253176Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:51.293822Z] Graph task status=processing progress=35
+[2026-03-28T20:50:51.746990Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:51.758926Z] Prepare status=processing progress=76
+[2026-03-28T20:50:53.295392Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:53.345222Z] Graph task status=processing progress=35
+[2026-03-28T20:50:54.764886Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:54.784865Z] Prepare status=processing progress=76
+[2026-03-28T20:50:55.346081Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:55.376965Z] Graph task status=processing progress=35
+[2026-03-28T20:50:57.377592Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:57.424514Z] Graph task status=processing progress=35
+[2026-03-28T20:50:57.786158Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:50:57.846572Z] Prepare status=ready progress=100
+[2026-03-28T20:50:57.846749Z] Simulation preparation complete
+[2026-03-28T20:50:57.846826Z] RUN simulation.start: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/start -H Content-Type: application/json -d
+[2026-03-28T20:50:57.890089Z] Started simulation run: {'completed_at': None, 'current_round': 0, 'error': None, 'force_restarted': False, 'graph_id': 'd317f343-0610-4ed5-a6a0-5f42398ab0c4', 'graph_memory_update_enabled': True, 'max_rounds_applied': 2, 'polymarket_actions_count': 0, 'polymarket_completed': False, 'polymarket_current_round': 0, 'polymarket_running': True, 'polymarket_simulated_hours': 0, 'process_pid': 76052, 'progress_percent': 0.0, 'reddit_actions_count': 0, 'reddit_completed': False, 'reddit_current_round': 0, 'reddit_running': True, 'reddit_simulated_hours': 0, 'resumed': False, 'runner_status': 'running', 'simulated_hours': 0, 'simulation_id': 'sim_93483619596f', 'started_at': '2026-03-28T13:50:57.881624', 'total_actions_count': 0, 'total_rounds': 2, 'total_simulation_hours': 72, 'twitter_actions_count': 0, 'twitter_completed': False, 'twitter_current_round': 0, 'twitter_running': True, 'twitter_simulated_hours': 0, 'updated_at': '2026-03-28T13:50:57.881630'}
+[2026-03-28T20:50:57.890172Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:57.916205Z] Run status=running rounds=0/2
+[2026-03-28T20:50:59.426058Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:50:59.484342Z] Graph task status=processing progress=35
+[2026-03-28T20:51:01.490056Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:01.499397Z] Graph task status=processing progress=35
+[2026-03-28T20:51:02.916743Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:02.927561Z] Run status=running rounds=0/2
+[2026-03-28T20:51:03.500023Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:03.528356Z] Graph task status=processing progress=35
+[2026-03-28T20:51:05.531395Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:05.577818Z] Graph task status=processing progress=35
+[2026-03-28T20:51:07.583371Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:07.606126Z] Graph task status=processing progress=35
+[2026-03-28T20:51:07.935378Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:07.946051Z] Run status=running rounds=0/2
+[2026-03-28T20:51:09.607393Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:09.624556Z] Graph task status=processing progress=35
+[2026-03-28T20:51:11.628835Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:11.694410Z] Graph task status=processing progress=35
+[2026-03-28T20:51:12.956168Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:12.966785Z] Run status=running rounds=0/2
+[2026-03-28T20:51:13.695375Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:13.705805Z] Graph task status=processing progress=35
+[2026-03-28T20:51:15.710936Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:15.740619Z] Graph task status=processing progress=35
+[2026-03-28T20:51:17.743396Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:17.754555Z] Graph task status=processing progress=35
+[2026-03-28T20:51:17.968430Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:18.063180Z] Run status=completed rounds=0/2
+[2026-03-28T20:51:18.063266Z] RUN report.generate: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate -H Content-Type: application/json -d
+[2026-03-28T20:51:18.207163Z] RUN report.generate.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate/status -H Content-Type: application/json -d
+[2026-03-28T20:51:18.242416Z] Report status=processing progress=10
+[2026-03-28T20:51:19.758906Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:19.771299Z] Graph task status=processing progress=35
+[2026-03-28T20:51:21.775634Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:21.797795Z] Graph task status=processing progress=35
+[2026-03-28T20:51:22.247543Z] RUN report.generate.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate/status -H Content-Type: application/json -d
+[2026-03-28T20:51:22.262662Z] Report status=completed progress=100
+[2026-03-28T20:51:22.262736Z] RUN report.get: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:22.294243Z] RUN graph.project.for_fallback: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:22.322486Z] RUN simulation.entities.for_fallback: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:23.802321Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:23.844439Z] Graph task status=processing progress=35
+[2026-03-28T20:51:25.845124Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:25.867065Z] Graph task status=processing progress=35
+[2026-03-28T20:51:27.871419Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:27.883785Z] Graph task status=processing progress=35
+[2026-03-28T20:51:29.888908Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:29.911108Z] Graph task status=processing progress=35
+[2026-03-28T20:51:31.913878Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:31.941295Z] Graph task status=processing progress=35
+[2026-03-28T20:51:33.942724Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:33.963200Z] Graph task status=processing progress=35
+[2026-03-28T20:51:35.968333Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:35.978805Z] Graph task status=processing progress=35
+[2026-03-28T20:51:37.981731Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:38.037553Z] Graph task status=processing progress=35
+[2026-03-28T20:51:40.042286Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:40.243775Z] Graph task status=processing progress=35
+[2026-03-28T20:51:42.246443Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:42.276963Z] Graph task status=processing progress=35
+[2026-03-28T20:51:44.278923Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:44.312648Z] Graph task status=processing progress=35
+[2026-03-28T20:51:46.317760Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:46.344534Z] Graph task status=processing progress=35
+[2026-03-28T20:51:48.349657Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:48.399594Z] Graph task status=processing progress=35
+[2026-03-28T20:51:50.404709Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:50.439424Z] Graph task status=processing progress=35
+[2026-03-28T20:51:52.441971Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:52.484349Z] Graph task status=processing progress=35
+[2026-03-28T20:51:54.487162Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:54.518096Z] Graph task status=processing progress=35
+[2026-03-28T20:51:56.521063Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:56.554359Z] Graph task status=processing progress=35
+[2026-03-28T20:51:58.556326Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:51:58.572665Z] Graph task status=processing progress=35
+[2026-03-28T20:52:00.575365Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:00.608671Z] Graph task status=processing progress=35
+[2026-03-28T20:52:02.609968Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:02.630621Z] Graph task status=processing progress=35
+[2026-03-28T20:52:04.631174Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:04.642980Z] Graph task status=processing progress=35
+[2026-03-28T20:52:06.646321Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:06.659646Z] Graph task status=processing progress=35
+[2026-03-28T20:52:08.659793Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:08.685294Z] Graph task status=processing progress=35
+[2026-03-28T20:52:10.687971Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:10.743255Z] Graph task status=processing progress=35
+[2026-03-28T20:52:12.748462Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:12.759556Z] Graph task status=processing progress=35
+[2026-03-28T20:52:14.763051Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:14.774350Z] Graph task status=processing progress=39
+[2026-03-28T20:52:16.775335Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:16.812940Z] Graph task status=processing progress=39
+[2026-03-28T20:52:18.815325Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:18.830230Z] Graph task status=processing progress=39
+[2026-03-28T20:52:20.831263Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:20.851349Z] Graph task status=processing progress=39
+[2026-03-28T20:52:22.855949Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:22.875410Z] Graph task status=processing progress=39
+[2026-03-28T20:52:24.880535Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:24.890235Z] Graph task status=processing progress=39
+[2026-03-28T20:52:26.892258Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:26.912089Z] Graph task status=processing progress=43
+[2026-03-28T20:52:28.917168Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:28.928967Z] Graph task status=processing progress=47
+[2026-03-28T20:52:30.929935Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:30.963781Z] Graph task status=processing progress=47
+[2026-03-28T20:52:32.964568Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:32.985815Z] Graph task status=processing progress=47
+[2026-03-28T20:52:34.990947Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:35.006456Z] Graph task status=processing progress=47
+[2026-03-28T20:52:37.009903Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:37.019833Z] Graph task status=processing progress=47
+[2026-03-28T20:52:39.024776Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:39.077622Z] Graph task status=processing progress=47
+[2026-03-28T20:52:41.079232Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:41.336127Z] Graph task status=processing progress=47
+[2026-03-28T20:52:43.337913Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:43.365131Z] Graph task status=processing progress=47
+[2026-03-28T20:52:45.370232Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:45.397770Z] Graph task status=processing progress=47
+[2026-03-28T20:52:47.402866Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:47.454621Z] Graph task status=processing progress=47
+[2026-03-28T20:52:49.456149Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:49.490715Z] Graph task status=processing progress=47
+[2026-03-28T20:52:51.492551Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:51.532453Z] Graph task status=processing progress=47
+[2026-03-28T20:52:53.534846Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:53.579878Z] Graph task status=processing progress=47
+[2026-03-28T20:52:55.582405Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:55.594139Z] Graph task status=processing progress=47
+[2026-03-28T20:52:57.596935Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:57.606519Z] Graph task status=processing progress=47
+[2026-03-28T20:52:59.610427Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:52:59.659120Z] Graph task status=processing progress=47
+[2026-03-28T20:53:01.660538Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:01.687625Z] Graph task status=processing progress=47
+[2026-03-28T20:53:03.689292Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:03.710457Z] Graph task status=processing progress=47
+[2026-03-28T20:53:05.711549Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:05.721219Z] Graph task status=processing progress=47
+[2026-03-28T20:53:07.725378Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:07.736593Z] Graph task status=processing progress=47
+[2026-03-28T20:53:09.739140Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:09.769392Z] Graph task status=processing progress=47
+[2026-03-28T20:53:11.769851Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:11.781041Z] Graph task status=processing progress=47
+[2026-03-28T20:53:13.786209Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:13.822964Z] Graph task status=processing progress=47
+[2026-03-28T20:53:15.826333Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:15.843148Z] Graph task status=processing progress=47
+[2026-03-28T20:53:17.844585Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:17.861343Z] Graph task status=processing progress=47
+[2026-03-28T20:53:19.863910Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:19.900033Z] Graph task status=processing progress=47
+[2026-03-28T20:53:21.905147Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:21.931167Z] Graph task status=processing progress=47
+[2026-03-28T20:53:23.936231Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:23.970363Z] Graph task status=processing progress=47
+[2026-03-28T20:53:25.974384Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:26.008985Z] Graph task status=processing progress=47
+[2026-03-28T20:53:28.010607Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:28.025209Z] Graph task status=processing progress=47
+[2026-03-28T20:53:30.030355Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:30.056547Z] Graph task status=processing progress=47
+[2026-03-28T20:53:32.058311Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:32.139653Z] Graph task status=processing progress=47
+[2026-03-28T20:53:34.141629Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:34.319138Z] Graph task status=processing progress=47
+[2026-03-28T20:53:36.321957Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:36.367796Z] Graph task status=processing progress=47
+[2026-03-28T20:53:38.372474Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:38.383602Z] Graph task status=processing progress=47
+[2026-03-28T20:53:40.384716Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:40.416514Z] Graph task status=processing progress=47
+[2026-03-28T20:53:42.421179Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:42.458214Z] Graph task status=processing progress=47
+[2026-03-28T20:53:44.468318Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:44.493062Z] Graph task status=processing progress=47
+[2026-03-28T20:53:46.496717Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:46.528223Z] Graph task status=processing progress=47
+[2026-03-28T20:53:48.529778Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:48.574335Z] Graph task status=processing progress=47
+[2026-03-28T20:53:50.584437Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:50.614014Z] Graph task status=processing progress=47
+[2026-03-28T20:53:52.624113Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:52.639285Z] Graph task status=processing progress=47
+[2026-03-28T20:53:54.645900Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:54.690727Z] Graph task status=processing progress=47
+[2026-03-28T20:53:56.693191Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:56.713861Z] Graph task status=processing progress=47
+[2026-03-28T20:53:58.714768Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:53:58.743171Z] Graph task status=processing progress=47
+[2026-03-28T20:54:00.747400Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:00.784705Z] Graph task status=processing progress=47
+[2026-03-28T20:54:02.788521Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:02.799899Z] Graph task status=processing progress=47
+[2026-03-28T20:54:04.810034Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:04.826360Z] Graph task status=processing progress=47
+[2026-03-28T20:54:06.830641Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:06.859671Z] Graph task status=processing progress=47
+[2026-03-28T20:54:08.869825Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:08.882176Z] Graph task status=processing progress=47
+[2026-03-28T20:54:10.886085Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:10.899680Z] Graph task status=processing progress=47
+[2026-03-28T20:54:12.908107Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:12.956313Z] Graph task status=processing progress=47
+[2026-03-28T20:54:14.957178Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:14.982286Z] Graph task status=processing progress=47
+[2026-03-28T20:54:16.987185Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:16.999157Z] Graph task status=processing progress=47
+[2026-03-28T20:54:19.004348Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:19.057087Z] Graph task status=processing progress=47
+[2026-03-28T20:54:21.063162Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:21.082823Z] Graph task status=processing progress=47
+[2026-03-28T20:54:23.088668Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:23.108710Z] Graph task status=processing progress=47
+[2026-03-28T20:54:25.109166Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:25.141227Z] Graph task status=processing progress=47
+[2026-03-28T20:54:27.151386Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:27.161897Z] Graph task status=processing progress=51
+[2026-03-28T20:54:29.164673Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:29.220825Z] Graph task status=processing progress=51
+[2026-03-28T20:54:31.228523Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:31.425306Z] Graph task status=processing progress=51
+[2026-03-28T20:54:33.435417Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:33.459447Z] Graph task status=processing progress=51
+[2026-03-28T20:54:35.469607Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:35.492729Z] Graph task status=processing progress=51
+[2026-03-28T20:54:37.501169Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:37.534172Z] Graph task status=processing progress=51
+[2026-03-28T20:54:39.543772Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:39.576627Z] Graph task status=processing progress=51
+[2026-03-28T20:54:41.577698Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:41.606942Z] Graph task status=processing progress=51
+[2026-03-28T20:54:43.608194Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:43.658993Z] Graph task status=processing progress=51
+[2026-03-28T20:54:45.660350Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:45.670220Z] Graph task status=processing progress=51
+[2026-03-28T20:54:47.677093Z] RUN graph.task.poll: curl -sS -w 
+%{http_code}
+[2026-03-28T20:54:47.707139Z] Graph task status=completed progress=100
+[2026-03-28T20:54:47.707222Z] Built graph cf0c9149-db2d-4bc8-8bde-25dbf305230e
+[2026-03-28T20:54:47.707275Z] RUN simulation.create: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/create -H Content-Type: application/json -d
+[2026-03-28T20:54:47.732935Z] Created simulation sim_92f7b20af5b1
+[2026-03-28T20:54:47.733008Z] RUN simulation.prepare: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare -H Content-Type: application/json -d
+[2026-03-28T20:54:47.778270Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:54:47.794282Z] Prepare status=processing progress=6
+[2026-03-28T20:54:50.796479Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:54:50.819715Z] Prepare status=processing progress=63
+[2026-03-28T20:54:53.824217Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:54:53.849806Z] Prepare status=processing progress=63
+[2026-03-28T20:54:56.859948Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:54:56.870541Z] Prepare status=processing progress=63
+[2026-03-28T20:54:59.876451Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:54:59.888474Z] Prepare status=processing progress=63
+[2026-03-28T20:55:02.896741Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:02.908618Z] Prepare status=processing progress=63
+[2026-03-28T20:55:05.918767Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:05.957907Z] Prepare status=processing progress=63
+[2026-03-28T20:55:08.959008Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:08.970302Z] Prepare status=processing progress=63
+[2026-03-28T20:55:11.972013Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:11.984261Z] Prepare status=processing progress=66
+[2026-03-28T20:55:14.988407Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:15.051526Z] Prepare status=processing progress=66
+[2026-03-28T20:55:18.052482Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:18.074698Z] Prepare status=processing progress=66
+[2026-03-28T20:55:21.081204Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:21.101201Z] Prepare status=processing progress=66
+[2026-03-28T20:55:24.107871Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:24.120231Z] Prepare status=processing progress=66
+[2026-03-28T20:55:27.127099Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:27.138558Z] Prepare status=processing progress=66
+[2026-03-28T20:55:30.148705Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:30.163863Z] Prepare status=processing progress=66
+[2026-03-28T20:55:33.172312Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:33.339459Z] Prepare status=processing progress=66
+[2026-03-28T20:55:36.348412Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:36.364824Z] Prepare status=processing progress=66
+[2026-03-28T20:55:39.375065Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:39.393792Z] Prepare status=processing progress=66
+[2026-03-28T20:55:42.400435Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:42.506731Z] Prepare status=processing progress=66
+[2026-03-28T20:55:45.513637Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:45.574502Z] Prepare status=processing progress=66
+[2026-03-28T20:55:48.580515Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:48.623115Z] Prepare status=processing progress=66
+[2026-03-28T20:55:51.630334Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:51.690162Z] Prepare status=processing progress=66
+[2026-03-28T20:55:54.691425Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:54.719865Z] Prepare status=processing progress=66
+[2026-03-28T20:55:57.721639Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:55:57.755654Z] Prepare status=processing progress=66
+[2026-03-28T20:56:00.764031Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:00.782554Z] Prepare status=processing progress=66
+[2026-03-28T20:56:03.783062Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:03.833493Z] Prepare status=processing progress=66
+[2026-03-28T20:56:06.838926Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:06.889135Z] Prepare status=processing progress=66
+[2026-03-28T20:56:09.891262Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:09.973057Z] Prepare status=processing progress=66
+[2026-03-28T20:56:12.983266Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:13.005112Z] Prepare status=processing progress=66
+[2026-03-28T20:56:16.006373Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:16.031343Z] Prepare status=processing progress=66
+[2026-03-28T20:56:19.041518Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:19.053869Z] Prepare status=processing progress=66
+[2026-03-28T20:56:22.055062Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:22.077005Z] Prepare status=processing progress=76
+[2026-03-28T20:56:25.087185Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:25.106698Z] Prepare status=processing progress=76
+[2026-03-28T20:56:28.113590Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:28.136889Z] Prepare status=processing progress=76
+[2026-03-28T20:56:31.137701Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:31.159301Z] Prepare status=processing progress=76
+[2026-03-28T20:56:34.161658Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:34.174066Z] Prepare status=processing progress=76
+[2026-03-28T20:56:37.184325Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:37.205081Z] Prepare status=processing progress=76
+[2026-03-28T20:56:40.214316Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:40.248726Z] Prepare status=processing progress=76
+[2026-03-28T20:56:43.258964Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:43.279972Z] Prepare status=processing progress=76
+[2026-03-28T20:56:46.290234Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:46.308236Z] Prepare status=processing progress=76
+[2026-03-28T20:56:49.318489Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:49.368741Z] Prepare status=processing progress=76
+[2026-03-28T20:56:52.369589Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:52.381294Z] Prepare status=processing progress=76
+[2026-03-28T20:56:55.382925Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:55.428144Z] Prepare status=processing progress=76
+[2026-03-28T20:56:58.430516Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:56:58.447947Z] Prepare status=processing progress=76
+[2026-03-28T20:57:01.457585Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:01.491878Z] Prepare status=processing progress=76
+[2026-03-28T20:57:04.497429Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:04.624383Z] Prepare status=processing progress=76
+[2026-03-28T20:57:07.633001Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:07.843807Z] Prepare status=processing progress=76
+[2026-03-28T20:57:10.851585Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:10.886300Z] Prepare status=processing progress=76
+[2026-03-28T20:57:13.891374Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:13.901314Z] Prepare status=processing progress=76
+[2026-03-28T20:57:16.902810Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:16.942383Z] Prepare status=processing progress=76
+[2026-03-28T20:57:19.952508Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:19.983603Z] Prepare status=processing progress=76
+[2026-03-28T20:57:22.989638Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:23.039348Z] Prepare status=processing progress=76
+[2026-03-28T20:57:26.040592Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:26.074254Z] Prepare status=processing progress=76
+[2026-03-28T20:57:29.081839Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:29.113465Z] Prepare status=processing progress=76
+[2026-03-28T20:57:32.120812Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:32.157680Z] Prepare status=processing progress=76
+[2026-03-28T20:57:35.167958Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:35.184330Z] Prepare status=processing progress=76
+[2026-03-28T20:57:38.186273Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:38.196624Z] Prepare status=processing progress=76
+[2026-03-28T20:57:41.204940Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:41.217060Z] Prepare status=processing progress=76
+[2026-03-28T20:57:44.227026Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:44.254136Z] Prepare status=processing progress=76
+[2026-03-28T20:57:47.264478Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:47.284927Z] Prepare status=processing progress=76
+[2026-03-28T20:57:50.293888Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:50.319843Z] Prepare status=processing progress=76
+[2026-03-28T20:57:53.321560Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:53.341115Z] Prepare status=processing progress=76
+[2026-03-28T20:57:56.341494Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:56.361475Z] Prepare status=processing progress=76
+[2026-03-28T20:57:59.371789Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:57:59.393663Z] Prepare status=processing progress=76
+[2026-03-28T20:58:02.397596Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:02.409312Z] Prepare status=processing progress=76
+[2026-03-28T20:58:05.419615Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:05.441473Z] Prepare status=processing progress=76
+[2026-03-28T20:58:08.448332Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:08.468947Z] Prepare status=processing progress=76
+[2026-03-28T20:58:11.474583Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:11.487841Z] Prepare status=processing progress=76
+[2026-03-28T20:58:14.496302Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:14.518855Z] Prepare status=processing progress=76
+[2026-03-28T20:58:17.522666Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:17.535586Z] Prepare status=processing progress=76
+[2026-03-28T20:58:20.537478Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:20.558452Z] Prepare status=processing progress=76
+[2026-03-28T20:58:23.564051Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:23.577637Z] Prepare status=processing progress=76
+[2026-03-28T20:58:26.580047Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:26.599800Z] Prepare status=processing progress=76
+[2026-03-28T20:58:29.606062Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:29.679869Z] Prepare status=processing progress=76
+[2026-03-28T20:58:32.680056Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:32.867803Z] Prepare status=processing progress=76
+[2026-03-28T20:58:35.870197Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:35.940812Z] Prepare status=processing progress=76
+[2026-03-28T20:58:38.947556Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:38.994326Z] Prepare status=processing progress=76
+[2026-03-28T20:58:41.994558Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:42.023427Z] Prepare status=processing progress=76
+[2026-03-28T20:58:45.026084Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:45.070099Z] Prepare status=processing progress=76
+[2026-03-28T20:58:48.074299Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:48.090069Z] Prepare status=processing progress=76
+[2026-03-28T20:58:51.092010Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:51.141534Z] Prepare status=processing progress=76
+[2026-03-28T20:58:54.142646Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:54.167282Z] Prepare status=processing progress=76
+[2026-03-28T20:58:57.177397Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:58:57.215442Z] Prepare status=processing progress=76
+[2026-03-28T20:59:00.220795Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:59:00.236351Z] Prepare status=processing progress=76
+[2026-03-28T20:59:03.238011Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:59:03.266732Z] Prepare status=processing progress=76
+[2026-03-28T20:59:06.276741Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:59:06.290758Z] Prepare status=processing progress=76
+[2026-03-28T20:59:09.299710Z] RUN simulation.prepare.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/prepare/status -H Content-Type: application/json -d
+[2026-03-28T20:59:09.330215Z] Prepare status=ready progress=100
+[2026-03-28T20:59:09.330296Z] Simulation preparation complete
+[2026-03-28T20:59:09.330351Z] RUN simulation.start: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/simulation/start -H Content-Type: application/json -d
+[2026-03-28T20:59:09.347100Z] Started simulation run: {'completed_at': None, 'current_round': 0, 'error': None, 'force_restarted': False, 'graph_id': 'cf0c9149-db2d-4bc8-8bde-25dbf305230e', 'graph_memory_update_enabled': True, 'max_rounds_applied': 2, 'polymarket_actions_count': 0, 'polymarket_completed': False, 'polymarket_current_round': 0, 'polymarket_running': True, 'polymarket_simulated_hours': 0, 'process_pid': 5536, 'progress_percent': 0.0, 'reddit_actions_count': 0, 'reddit_completed': False, 'reddit_current_round': 0, 'reddit_running': True, 'reddit_simulated_hours': 0, 'resumed': False, 'runner_status': 'running', 'simulated_hours': 0, 'simulation_id': 'sim_92f7b20af5b1', 'started_at': '2026-03-28T13:59:09.339171', 'total_actions_count': 0, 'total_rounds': 2, 'total_simulation_hours': 72, 'twitter_actions_count': 0, 'twitter_completed': False, 'twitter_current_round': 0, 'twitter_running': True, 'twitter_simulated_hours': 0, 'updated_at': '2026-03-28T13:59:09.339176'}
+[2026-03-28T20:59:09.347171Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:09.356403Z] Run status=running rounds=0/2
+[2026-03-28T20:59:14.366572Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:14.389258Z] Run status=running rounds=0/2
+[2026-03-28T20:59:19.389715Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:19.399488Z] Run status=running rounds=0/2
+[2026-03-28T20:59:24.409681Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:24.429001Z] Run status=running rounds=0/2
+[2026-03-28T20:59:29.439182Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:29.463198Z] Run status=running rounds=0/2
+[2026-03-28T20:59:34.473394Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:34.494840Z] Run status=running rounds=0/2
+[2026-03-28T20:59:39.504841Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:39.524142Z] Run status=running rounds=0/2
+[2026-03-28T20:59:44.534334Z] RUN simulation.run_status: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:44.556303Z] Run status=completed rounds=0/2
+[2026-03-28T20:59:44.556422Z] RUN report.generate: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate -H Content-Type: application/json -d
+[2026-03-28T20:59:44.576165Z] RUN report.generate.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate/status -H Content-Type: application/json -d
+[2026-03-28T20:59:44.600458Z] Report status=processing progress=10
+[2026-03-28T20:59:48.601371Z] RUN report.generate.status: curl -sS -w 
+%{http_code} -X POST http://localhost:5001/api/report/generate/status -H Content-Type: application/json -d
+[2026-03-28T20:59:48.622789Z] Report status=completed progress=100
+[2026-03-28T20:59:48.622905Z] RUN report.get: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:48.688018Z] RUN graph.project.for_fallback: curl -sS -w 
+%{http_code}
+[2026-03-28T20:59:48.726569Z] RUN simulation.entities.for_fallback: curl -sS -w 
+%{http_code}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Operational Risk Brief — Fallback Artifact</title>
+  <style>
+    body { margin:0; background:#0b1020; color:#e6eef8; font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 48px 32px 80px; }
+    .tag { display:inline-block; padding:6px 10px; border:1px solid rgba(148,163,184,.35); border-radius:999px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#93c5fd; background:rgba(59,130,246,.08); }
+    h1 { font-size: 40px; line-height:1.05; margin: 18px 0 12px; }
+    .sub { color:#94a3b8; font-size:18px; line-height:1.6; max-width:860px; }
+    .grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px; margin:32px 0; }
+    .card { background:linear-gradient(180deg, rgba(15,23,42,.95), rgba(15,23,42,.88)); border:1px solid rgba(148,163,184,.18); border-radius:20px; padding:20px; box-shadow: 0 24px 80px rgba(0,0,0,.28); }
+    .label { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#94a3b8; margin-bottom:8px; }
+    .value { font-size:24px; font-weight:700; }
+    h2 { margin:34px 0 14px; font-size:22px; }
+    ul { margin:0; padding-left:18px; color:#dbeafe; line-height:1.7; }
+    li { margin: 8px 0; }
+    .foot { margin-top:28px; color:#94a3b8; font-size:14px; }
+    .qa { background:linear-gradient(180deg, rgba(15,23,42,.95), rgba(15,23,42,.88)); border:1px solid rgba(148,163,184,.18); border-radius:20px; padding:20px; margin:20px 0; }
+    .q { color:#93c5fd; font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tag">Factory Shock Simulator</div>
+    <h1>Operational Risk Brief — Fallback Artifact</h1>
+    <p class="sub">This ontology models the operational supply chain for a battery materials factory under export restriction shock. It emphasizes material dependencies, supplier relationships, logistics flows, and stakeholder roles. The structure supports simulating inventory burn, lead-time expansion, and production risk cascades, with clear paths to identify the most constrained node (lithium precursor supply) and evaluate mitigation options such as alternate sourcing or expedited shipping.</p>
+    <div class="grid">
+      <div class="card"><div class="label">Estimated disruption window</div><div class="value">14-21 days under current inventory assumptions</div></div>
+      <div class="card"><div class="label">Most constrained node</div><div class="value">Lithium precursor supply and second-tier processing capacity</div></div>
+    </div>
+    <h2>Primary failure chain</h2>
+    <div class="card"><ul><li>Chinese lithium precursor export restriction tightens outbound volumes</li><li>Ganfeng Lithium and related upstream processors face lead-time and availability stress</li><li>Northstar Battery Components burns inventory while second-tier supply buffers shrink</li><li>Port of Long Beach and rerouting constraints amplify delay and cost pressure</li><li>FleetMotion OEM delivery risk rises as line-down exposure increases</li></ul></div>
+    <h2>Recommended actions</h2>
+    <div class="card"><ul><li>Expedite inbound critical precursor and separator material for the highest-risk production line</li><li>Pool and reallocate inventory across customers or plants to protect near-term delivery commitments</li><li>Open contingency procurement with alternate precursor or cathode processors immediately</li><li>Negotiate temporary delivery flexibility with the highest-risk OEM customer</li><li>Track regulator and logistics chokepoints daily and pre-book rerouting capacity</li></ul></div>
+    <h2>Trust moment — operator interrogation</h2>
+    <div class="qa">
+      <div class="q">Question</div>
+      <p>Why does this shock become critical so fast?</p>
+      <div class="q">Answer</div>
+      <p>The factory depends on lithium precursor flow from Ganfeng Lithium. Once lead times stretch and replacement flow slows, Northstar Battery Components burns inventory while second-tier supply buffers shrink.</p>
+    </div>
+    <p class="foot">Heuristic fallback artifact generated from graph state and scenario assumptions; use as demo-safe backup, not as a precise forecast.</p>
+  </div>
+</body>
+</html>

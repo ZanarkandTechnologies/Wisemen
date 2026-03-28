@@ -1,0 +1,36 @@
+{
+  "report_id": "report_d66d97403482",
+  "simulation_id": "sim_92f7b20af5b1",
+  "type": "fallback_operational_risk_brief",
+  "graph_id": "cf0c9149-db2d-4bc8-8bde-25dbf305230e",
+  "graph_node_count": 29,
+  "entity_distribution": {
+    "Supplier": 11,
+    "Organization": 2,
+    "OEMCustomer": 7,
+    "Material": 5,
+    "Regulator": 1,
+    "LogisticsNode": 1,
+    "Processor": 1,
+    "Factory": 1
+  },
+  "title": "Operational Risk Brief \u2014 Fallback Artifact",
+  "summary": "This ontology models the operational supply chain for a battery materials factory under export restriction shock. It emphasizes material dependencies, supplier relationships, logistics flows, and stakeholder roles. The structure supports simulating inventory burn, lead-time expansion, and production risk cascades, with clear paths to identify the most constrained node (lithium precursor supply) and evaluate mitigation options such as alternate sourcing or expedited shipping.",
+  "primary_failure_chain": [
+    "Chinese lithium precursor export restriction tightens outbound volumes",
+    "Ganfeng Lithium and related upstream processors face lead-time and availability stress",
+    "Northstar Battery Components burns inventory while second-tier supply buffers shrink",
+    "Port of Long Beach and rerouting constraints amplify delay and cost pressure",
+    "FleetMotion OEM delivery risk rises as line-down exposure increases"
+  ],
+  "most_constrained_node": "Lithium precursor supply and second-tier processing capacity",
+  "estimated_disruption_window": "14-21 days under current inventory assumptions",
+  "recommended_actions": [
+    "Expedite inbound critical precursor and separator material for the highest-risk production line",
+    "Pool and reallocate inventory across customers or plants to protect near-term delivery commitments",
+    "Open contingency procurement with alternate precursor or cathode processors immediately",
+    "Negotiate temporary delivery flexibility with the highest-risk OEM customer",
+    "Track regulator and logistics chokepoints daily and pre-book rerouting capacity"
+  ],
+  "confidence_note": "Heuristic fallback artifact generated from graph state and scenario assumptions; use as demo-safe backup, not as a precise forecast."
+}

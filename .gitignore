@@ -1,0 +1,41 @@
+.DS_Store
+
+# OMX runtime/state
+.omx/
+
+# Local secrets and environment
+*.env
+*.local
+MiroShark/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+MiroShark/backend/.venv/
+
+# Node / frontend build artifacts
+node_modules/
+dist/
+build/
+MiroShark/node_modules/
+MiroShark/frontend/node_modules/
+MiroShark/frontend/dist/
+
+# Runtime outputs / caches
+logs/
+tmp/
+temp/
+coverage/
+MiroShark/backend/logs/
+MiroShark/backend/uploads/
+MiroShark/backend/pipeline_test_output/
+MiroShark/backend/e2e_test_output/
+
+# Preserve code in MiroShark, but never commit nested git metadata
+MiroShark/.git
+MiroShark/.git.upstream-backup/

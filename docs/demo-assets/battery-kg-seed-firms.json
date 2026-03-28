@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Ganfeng Lithium",
+    "category": "lithium_supplier",
+    "country": "China",
+    "role": "upstream lithium resources, refining, processing",
+    "suggested_synthetic_alias": "Jade Ridge Lithium Materials",
+    "source_confidence": "official",
+    "source_url": "https://www.ganfenglithium.com/about1_en.html"
+  },
+  {
+    "name": "Albemarle",
+    "category": "lithium_supplier",
+    "country": "United States",
+    "role": "battery lithium products and hydroxide supply",
+    "suggested_synthetic_alias": "Blue Mesa Lithium Chemicals",
+    "source_confidence": "official",
+    "source_url": "https://www.albemarle.com/offerings/lithium/products/battery-products"
+  },
+  {
+    "name": "SQM",
+    "category": "lithium_supplier",
+    "country": "Chile",
+    "role": "lithium carbonate and hydroxide production",
+    "suggested_synthetic_alias": "Atacama Advanced Lithium",
+    "source_confidence": "official",
+    "source_url": "https://sqm.com/en/productos/litio-y-derivados/"
+  },
+  {
+    "name": "POSCO Future M",
+    "category": "cathode_processor",
+    "country": "South Korea",
+    "role": "cathode active materials and precursors",
+    "suggested_synthetic_alias": "Hanseong Cathode Processing",
+    "source_confidence": "official",
+    "source_url": "https://www.poscofuturem.com/en/business/energy.do"
+  },
+  {
+    "name": "EcoPro BM",
+    "category": "cathode_processor",
+    "country": "South Korea",
+    "role": "cathode materials",
+    "suggested_synthetic_alias": "Orion Cathode Materials",
+    "source_confidence": "official",
+    "source_url": "https://www.ecopro.co.kr/_files/brochure_pdf/20230403/9c425abd069a42e3334ab1557d1d0ecf.pdf"
+  },
+  {
+    "name": "Asahi Kasei / Hipore",
+    "category": "separator_supplier",
+    "country": "Japan",
+    "role": "wet-process lithium-ion battery separators",
+    "suggested_synthetic_alias": "Seika Separator Systems",
+    "source_confidence": "official",
+    "source_url": "https://www.asahi-kasei.com/news/2023/e231031.html"
+  },
+  {
+    "name": "Celgard",
+    "category": "separator_supplier",
+    "country": "United States",
+    "role": "microporous membranes and battery separators",
+    "suggested_synthetic_alias": "Carolina Separator Technologies",
+    "source_confidence": "official",
+    "source_url": "https://www.celgard.com/"
+  },
+  {
+    "name": "Toyota Tsusho",
+    "category": "supply_chain_integrator",
+    "country": "Japan",
+    "role": "battery component supply-chain integration and recycling",
+    "suggested_synthetic_alias": "Global Mobility Materials",
+    "source_confidence": "official",
+    "source_url": "https://www.toyota-tsusho.com/english/ir/library/integrated-report/pdf/ar2025e_03.pdf"
+  },
+  {
+    "name": "LG Energy Solution",
+    "category": "battery_maker",
+    "country": "South Korea",
+    "role": "battery manufacturing and lithium offtake partnerships",
+    "suggested_synthetic_alias": "Lumen Grid Energy",
+    "source_confidence": "official",
+    "source_url": "https://news.lgensol.com/company-news/press-releases/2435/"
+  },
+  {
+    "name": "Panasonic Energy",
+    "category": "battery_maker",
+    "country": "Japan / United States",
+    "role": "North American EV cell manufacturing",
+    "suggested_synthetic_alias": "Prairie Cell Energy",
+    "source_confidence": "official",
+    "source_url": "https://na.panasonic.com/news/panasonic-energy-begins-mass-production-at-new-automotive-lithium-ion-battery-factory-in-kansas-aiming-for-annual-capacity-of-32-gwh-to-accelerate-us-local-production"
+  },
+  {
+    "name": "Ford",
+    "category": "oem_customer_signal",
+    "country": "United States",
+    "role": "downstream EV demand and lithium supply agreements",
+    "suggested_synthetic_alias": "FleetMotion OEM",
+    "source_confidence": "official/public",
+    "source_url": "https://sqm.com/en/noticia/sqm-anuncia-acuerdo-de-suministro-de-litio-a-largo-plazo-con-ford-motor-company/"
+  },
+  {
+    "name": "USGS Lithium Statistics",
+    "category": "public_data_source",
+    "country": "United States",
+    "role": "macro lithium supply-chain grounding",
+    "suggested_synthetic_alias": "USGS Lithium Statistics",
+    "source_confidence": "official",
+    "source_url": "https://www.usgs.gov/centers/national-minerals-information-center/lithium-statistics-and-information"
+  }
+]
