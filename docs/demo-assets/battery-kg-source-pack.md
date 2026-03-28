@@ -2,7 +2,7 @@
 
 Last updated: March 28, 2026
 
-Purpose: give the Factory Shock Simulator a fast, good-enough set of real-world anchors for seeding a battery supply-chain knowledge graph. This is intentionally optimized for hackathon speed, not master-data perfection.
+Purpose: give Miro Supply a fast, good-enough set of real-world anchors for seeding a battery supply-chain knowledge graph. This is intentionally optimized for hackathon speed, not master-data perfection.
 
 ## Recommended use
 

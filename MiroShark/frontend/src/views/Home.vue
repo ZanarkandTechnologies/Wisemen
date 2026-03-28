@@ -2,9 +2,9 @@
   <div class="home-container">
     <!-- Top Navigation Bar -->
     <nav class="navbar">
-      <div class="nav-brand">MIROSHARK</div>
+      <div class="nav-brand">MIRO SUPPLY</div>
       <div class="nav-links">
-        <a href="https://github.com/aaronjmars/MiroShark" target="_blank" class="github-link">
+        <a href="https://github.com/ZanarkandTechnologies/Wisemen" target="_blank" class="github-link">
           GitHub <span class="arrow">↗</span>
         </a>
       </div>
@@ -23,7 +23,7 @@
 
         <div class="hero-desc">
           <p>
-            Upload a factory scenario. <span class="highlight-bold">MiroShark</span> extracts the critical actors, generates <span class="highlight-orange">AI stakeholders</span>, and simulates how supply shocks propagate across plant operations, suppliers, and risk markets.
+            Upload a factory scenario. <span class="highlight-bold">Miro Supply</span> extracts the critical actors, generates <span class="highlight-orange">AI stakeholders</span>, and simulates how supply shocks propagate across plant operations, suppliers, and risk markets.
           </p>
           <p class="slogan-text">
             Don't guess the disruption. Simulate the cascade<span class="blinking-cursor">_</span>
@@ -158,7 +158,7 @@
                   rows="6"
                   :disabled="loading"
                 ></textarea>
-                <div class="model-badge">Engine: MiroShark-V1.0</div>
+                <div class="model-badge">Engine: Miro Supply</div>
               </div>
             </div>
 

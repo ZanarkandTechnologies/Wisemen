@@ -311,7 +311,7 @@ def write_report_html(report_data):
 </head>
 <body>
   <div class="wrap">
-    <div class="tag">Factory Shock Simulator</div>
+    <div class="tag">Miro Supply</div>
     <h1>{escape(report_data.get('title', 'Operational Risk Brief'))}</h1>
     <p class="sub">{escape(report_data.get('summary', ''))}</p>
     <div class="grid">
@@ -364,7 +364,7 @@ def write_interaction_fallback_html(report_data):
 </head>
 <body>
   <div class="wrap">
-    <div class="tag">Factory Shock Simulator</div>
+    <div class="tag">Miro Supply</div>
     <h1>Agent Interrogation Fallback</h1>
     <p>Use this as the trust moment if the live interaction surface is slow. It turns the same risk brief into a concise operator-style interrogation moment without depending on the live app.</p>
     <div class="qa">

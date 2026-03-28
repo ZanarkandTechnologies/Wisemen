@@ -1,4 +1,4 @@
-# Factory Shock Simulator Demo Runbook
+# Miro Supply Demo Runbook
 
 Last updated: March 28, 2026
 
@@ -107,7 +107,7 @@ Tail these while debugging:
 ```bash
 tail -f docs/demo-assets/fallback-artifacts/run-latest.log
 cat docs/demo-assets/fallback-artifacts/run-latest.json
-cd MiroShark && tail -f backend/logs/$(date +%F).log
+./scripts/tail_demo_logs.sh
 ```
 
 Primary artifact outputs:
@@ -164,8 +164,7 @@ Use these in order:
    ```
 2. restart stack:
    ```bash
-   cd MiroShark
-   npm run dev
+   ./scripts/dev_up.sh
    ```
 3. rerun the scripted demo path
 4. inspect the trace log and backend log before changing code

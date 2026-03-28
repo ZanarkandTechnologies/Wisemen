@@ -1,6 +1,6 @@
-# Wisemen — Factory Shock Simulator
+# Wisemen — Miro Supply
 
-Factory Shock Simulator is a hackathon-built decision-support demo for factory owners and operators.
+Miro Supply is a hackathon-built decision-support demo for factory owners and operators.
 
 It turns a synthetic factory scenario plus a supply-chain shock into:
 
@@ -12,7 +12,7 @@ It turns a synthetic factory scenario plus a supply-chain shock into:
 
 ## What we worked on
 
-We repurposed and wrapped the open-source `MiroShark` simulation engine into a factory-risk product demo.
+We repurposed and wrapped an open-source simulation engine into a factory-risk product demo.
 
 Instead of using it as a social-reaction simulator, we pushed it toward:
 
@@ -55,7 +55,7 @@ We explicitly avoided:
 
 ## The solution
 
-Factory Shock Simulator uses a graph-backed multi-agent simulation workflow:
+Miro Supply uses a graph-backed multi-agent simulation workflow:
 
 1. ingest a synthetic factory scenario
 2. inject a shock prompt
@@ -85,13 +85,13 @@ This project builds on top of existing systems rather than pretending everything
 
 ### Base engine
 
-- `MiroShark`
+- open-source graph-backed simulation engine
 
 ### Backend stack
 
 - Python / Flask
 - Neo4j graph storage
-- MiroShark graph + report services
+- graph + report services from the underlying engine
 - Wonderwall / OASIS-style simulation scripts
 - OpenAI-compatible LLM routing
 
@@ -108,7 +108,7 @@ This project builds on top of existing systems rather than pretending everything
 
 ## What is uniquely ours
 
-Our contribution is not “we cloned MiroShark.”
+Our contribution is not “we just reused an existing engine.”
 
 Our contribution is the product layer, the framing, and the demo system:
 
@@ -216,8 +216,7 @@ It refreshes the demo bundle and writes artifacts to:
 If you want to drive the live UI:
 
 ```bash
-cd MiroShark
-npm run dev
+./scripts/dev_up.sh
 ```
 
 Then go to:

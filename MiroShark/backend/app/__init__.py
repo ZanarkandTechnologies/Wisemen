@@ -1,5 +1,5 @@
 """
-MiroShark Backend - Flask application factory
+Miro Supply Backend - Flask application factory
 """
 
 import os
@@ -36,7 +36,7 @@ def create_app(config_class=Config):
     
     if should_log_startup:
         logger.info("=" * 50)
-        logger.info("MiroShark Backend starting...")
+        logger.info("Miro Supply Backend starting...")
         logger.info("=" * 50)
     
     # Enable CORS
@@ -83,10 +83,9 @@ def create_app(config_class=Config):
     # Health check
     @app.route('/health')
     def health():
-        return {'status': 'ok', 'service': 'MiroShark Backend'}
+        return {'status': 'ok', 'service': 'Miro Supply Backend'}
     
     if should_log_startup:
-        logger.info("MiroShark Backend startup complete")
+        logger.info("Miro Supply Backend startup complete")
     
     return app
-
